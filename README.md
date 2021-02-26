@@ -9,4 +9,4 @@
 
 * **移动窗口**
   
-  * [查找字符串最长子串](src/move-widnow) 
+  * [查找字符串最长子串](https://github.com/Gavin-yh/algorithm/tree/master/src/move-window)
