@@ -16,8 +16,14 @@
 var maxSlidingWindow = function(nums, k) {
     var resultArr = []
     var tempArr = []
-    for(var i = 0; i < nums.length;) {
-        if(tempArr.length < 3) {
+    
+    //这里要注意边界问题： 比如输入：[] , 0 ; 或者 [1], 2
+    if (nums.length < k || !k) {    
+        return nums
+    }
+    
+    for(var i = 0; i <= nums.length;) {
+        if(tempArr.length < k) {
             tempArr.push(nums[i])
             i ++
         } else {
