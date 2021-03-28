@@ -39,3 +39,42 @@ var longestPalindrome = function(s) {
   return s.substring(start,end+1);
 };
 
+
+
+/**
+ * 
+ * @param {*} s  字符串 
+ * @returns 
+ * 
+ * 方法二
+ */
+var longestPalindrome = function(s) {
+    let resStr = ''
+    let len = s.length
+
+    for (let i = 0, j, k; i < len; i ++) {
+       j = k = i 
+
+       while (j >= 0 && k < len && s[j] ===s[k] ) {
+           j --
+           k ++
+       }
+
+       if(resStr.length < k - j -1) {
+            resStr = s.substring(j + 1, k)
+       }
+
+       j = i
+       k = i + 1
+       while( j >= 0 && k < len && s[j] === s[k]) {
+            j --
+            k ++   
+       }
+        if(resStr.length < k - j -1) {
+            resStr = s.substring(j + 1, k)
+       }
+    }
+
+    return resStr
+};
+
