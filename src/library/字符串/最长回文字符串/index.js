@@ -78,3 +78,8 @@ var longestPalindrome = function(s) {
     return resStr
 };
 
+/**
+ * 1. k - j - i 是因为这里的j 和 k都往后移动了以为，所以要减去1
+ * 2. substring(indexStart, indexStart), [indexStart, indexEnd), 注意区间
+ */
+
