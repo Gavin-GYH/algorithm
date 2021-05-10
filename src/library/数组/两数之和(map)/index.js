@@ -2,6 +2,10 @@
 /**
  * https://leetcode-cn.com/problems/two-sum/  两数之和
  * 
+ * 
+ * nums = [2,7,11,15], target = 9   =>   [0,1]
+ * 
+ * 
  * @param {number[]} nums  数组
  * @param {number} target 目标值
  * @return {number[]}

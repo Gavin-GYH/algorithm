@@ -7,6 +7,10 @@
 
  *  元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
  * 
+ * 
+ * nums = [3,2,2,3], val = 3   ==>  2, nums = [2,2]
+ * 
+ * 
  * @param {number[]} nums
  * @param {number} val
  * @return {number}

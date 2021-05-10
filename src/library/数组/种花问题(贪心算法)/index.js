@@ -38,7 +38,7 @@ var canPlaceFlowers = function(flowerbed, n) {
  * 
  * 贪心算法(尽可能多)
  * 
- * 判断能否在不打破种植规则的情况下在花坛内种入 nn 朵花，从贪心的角度考虑，
+ * 判断能否在不打破种植规则的情况下在花坛内种入 n 朵花，从贪心的角度考虑，
  * 应该在不打破种植规则的情况下种入尽可能多的花，然后判断可以种入的花的最多数量是否大于或等于 nn。
  */
 var canPlaceFlowers = function (flowerbed, n) {
